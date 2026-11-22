@@ -1,0 +1,82 @@
+id = "vimi/kdeconnect"
+name = "KDE Connect"
+version = "1.0.0"
+plugin_api = 29
+author = "vimi"
+license = "MIT"
+description = "Interface para o KDE Connect via D-Bus"
+dependencies = ["kdeconnect", "busctl", "gdbus", "zenity"]
+
+[[service]]
+id = "service"
+name = "KDE Connect Service"
+entry = "service.luau"
+
+[[widget]]
+id = "widget"
+name = "KDE Connect"
+entry = "widget.luau"
+
+[[widget.setting]]
+key = "hide_when_disconnected"
+type = "bool"
+label_key = "settings.hide_when_disconnected.label"
+description_key = "settings.hide_when_disconnected.description"
+default = false
+
+[[widget.setting]]
+key = "show_battery_text"
+type = "bool"
+label_key = "settings.show_battery_text.label"
+description_key = "settings.show_battery_text.description"
+default = true
+
+[[panel]]
+id = "panel"
+name = "KDE Connect"
+entry = "panel.luau"
+width = 420
+height = 560
+
+[[setting]]
+key = "default_device"
+type = "string"
+label_key = "settings.default_device.label"
+description_key = "settings.default_device.description"
+default = ""
+
+[[setting]]
+key = "show_ping"
+type = "bool"
+label_key = "settings.show_ping.label"
+default = true
+
+[[setting]]
+key = "show_ring"
+type = "bool"
+label_key = "settings.show_ring.label"
+default = true
+
+[[setting]]
+key = "show_share"
+type = "bool"
+label_key = "settings.show_share.label"
+default = true
+
+[[setting]]
+key = "show_clipboard"
+type = "bool"
+label_key = "settings.show_clipboard.label"
+default = true
+
+[[setting]]
+key = "show_media"
+type = "bool"
+label_key = "settings.show_media.label"
+default = true
+
+[[setting]]
+key = "show_notifications"
+type = "bool"
+label_key = "settings.show_notifications.label"
+default = true

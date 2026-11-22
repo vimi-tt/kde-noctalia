@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "hide_when_disconnected": {
+      "label": "Ocultar quando desconectado",
+      "description": "Esconde o widget da barra quando nenhum dispositivo estiver conectado"
+    },
+    "show_battery_text": {
+      "label": "Mostrar porcentagem de bateria",
+      "description": "Exibe a porcentagem de bateria ao lado do ícone na barra"
+    },
+    "default_device": {
+      "label": "Dispositivo padrão",
+      "description": "Nome ou ID do dispositivo selecionado automaticamente"
+    },
+    "show_ping": {
+      "label": "Mostrar ação Ping"
+    },
+    "show_ring": {
+      "label": "Mostrar ação Tocar celular"
+    },
+    "show_share": {
+      "label": "Mostrar envio de arquivos e texto"
+    },
+    "show_clipboard": {
+      "label": "Mostrar ação Clipboard"
+    },
+    "show_media": {
+      "label": "Mostrar controle de mídia"
+    },
+    "show_notifications": {
+      "label": "Mostrar notificações espelhadas"
+    }
+  }
+}
